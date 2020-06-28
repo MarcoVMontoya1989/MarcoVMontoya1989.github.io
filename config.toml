@@ -1,0 +1,39 @@
+baseURL = "http://marcovmontoya.me/"
+languageCode = "en-us"
+title = "Hey! I am Marco Antonio V Montoya"
+theme = "codex"
+copyright = "MarcoVMontoya1989© 2020"
+
+isqusShortname = "MarkV"
+
+
+# ----------------------------------------------------------------
+# custom info with icons
+[params]
+  twitter = "https://twitter.com/"
+  github = "https://github.com/MarcoVMontoya1989"
+  email = "mailto:marcovmontoya@gmail.com"
+  linkedin = "https://www.linkedin.com/in/marco-montoya-31b54aa8/"
+
+  iconTitles = ["Twitter", "GitHub", "Email", "LinkedIn"]
+  dateFormat = "January 2006"
+
+# ----------------------------------------------------------------
+# custom pages/content
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  title = "About"
+  url = "/"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  title = "Blog"
+  url = "/blog"
+
+
+# ----------------------------------------------------------------
+#custom css styles
+[params.colors]
+  fancy = "#f06292"
