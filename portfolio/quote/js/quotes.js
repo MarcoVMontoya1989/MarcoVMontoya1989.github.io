@@ -21,10 +21,11 @@ async function getQuotes() {
     showLoadingSpinner();
 
     const quoteAPI = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
     try {
-        const response = await fetch(proxyUrl + quoteAPI);
+        // const response = await fetch(proxyUrl + quoteAPI); //local test
+        const response = await fetch(quoteAPI); //cloud
         const data = await response.json();
 
         if(data.quoteAuthor === '') {
