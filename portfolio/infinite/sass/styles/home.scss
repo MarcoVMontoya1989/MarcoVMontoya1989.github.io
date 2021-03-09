@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: darkgray;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 5px;
+
+  @include respond(phone) {
+    font-size: 20px;
+  }
+}
