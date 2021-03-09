@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader hidden">
+    <img src="src/rocket.svg" alt="rocket loading animation">
+</div>
+
+<section id="nasa_images">
+    <div class="container">
+        <div class="navigation-container">
+            <span class="background"></span>
+
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNASAImages()">Load More</h3>
+            </span>
+            <!-- fav nav-->
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNASAImages()">Load More NASA Images</h3>
+            </span>
+        </div>
+
+        <!--Image container-->
+        <div class="images-container">
+        </div>
+    </div>
+
+    <div class="save-confirmed" hidden>
+        <h1>Added!</h1>
+    </div>
+</section>
+
+<script src="js/nasa.js"></script>
+</body>
+</html>

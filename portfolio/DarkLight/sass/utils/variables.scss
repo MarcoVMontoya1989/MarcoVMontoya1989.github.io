@@ -1,0 +1,123 @@
+
+:root {
+  --primary-color: rgb(255,92,92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250,250,250);
+  --on-background: rgb(66,66,66);
+  --on-background-alt: rgba(66,66,66,0.7);
+  --background: rgb(255,255,255);
+  --box-shadow: 0 5px 20px 1px rgba(0,0,0,0.5);
+}
+
+[data-theme='dark'] {
+  --primary-color: rgb(150,65,255);
+  --primary-variant: #6c63ff;
+  --secondary-color: #03dac5;
+  --on-primary: #000;
+  --on-background: rgba(255,255,255,0.8);
+  --on-background-alt: rgba(255,255,255,0.5);
+  --background: #121212;
+}
+
+//
+////--colors
+//$brand--primary--light: #b45139;
+//$brand--primary--dark: lighten($brand--primary--light, 10%);
+//$brand--secondary--light: $brand--primary--light;
+//$brand--secondary--dark: $brand--primary--dark;
+////$brand--secondary--light: #4376A3;
+////$brand--secondary--dark: lighten($brand--secondary--light, 18%);
+//$bg--red: lighten($brand--primary--light, 40%);
+//$bg--blue: lighten($brand--secondary--light, 40%);
+//$bg--light: #F5F4F3;
+//$bg--dark--top: #333848;
+//$bg--dark--top: #272b38;
+//$bg--dark--bottom: #212631;
+//$bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
+//$bg--card--light: lighten($bg--light, 1%);
+//$bg--card--dark: desaturate(lighten($bg--dark--top, 5%), 5%);
+//$card-border--light: 0px solid transparent;
+//$card-border--dark: 1px solid lighten($bg--card--dark, 12%);
+//$text--imp--light: #242D30;
+//$text--imp--dark: #E8E4E0;
+//$text--light: lighten($text--imp--light, 12%);
+//$text--dark: #cac3bc;
+//$text--2--light: $text--imp--light;
+//$text--2--dark: $text--imp--dark;
+//$text--3--light: lighten($text--light, 20%);
+//$text--3--dark: darken($text--dark, 20%);
+//$border--light: darken($bg--card--light, 10%);
+//$border--dark: lighten($bg--card--dark, 10%);
+//$hover--light: transparentize($brand--secondary--light, .9);
+//$hover--dark: transparentize(#fff, .9);
+//
+//$highlight-color: transparentize($brand--secondary--light, .1);
+//
+//
+//
+////shortcuts
+//$bg: 'bg';
+//$card-bg: 'card-bg';
+//$card-border: 'card-border';
+//$text: 'text';
+//$text-important: 'text-important';
+//$text-secondary: 'text-secondary';
+//$text-badge: 'text-badge';
+//$link: 'link';
+//$hover: 'hover';
+//$logo: 'logo';
+//$logo2: 'logo-2';
+//$brand-secondary: 'brand-blue';
+//$brand-primary: 'brand-red';
+//$border: 'border';
+//
+////themes
+//$themes: (
+//        default: (
+//                bg: $bg--light,
+//                card-bg: $bg--card--light,
+//                card-border: $card-border--light,
+//                text: $text--light,
+//                text-important: $text--imp--light,
+//                text-secondary: $text--2--light,
+//                text-badge: $text--light,
+//                link: $brand--secondary--light,
+//                hover: $hover--light,
+//                brand-red: $brand--primary--light,
+//                brand-blue: $brand--secondary--light,
+//                border: $border--light
+//        ),
+//        dark: (
+//                bg: $bg--dark--top,
+//                card-bg: $bg--card--dark,
+//                card-border: $card-border--dark,
+//                text: $text--dark,
+//                text-important: $text--imp--dark,
+//                text-secondary: $text--2--dark,
+//                text-badge: $text--dark,
+//                link: $brand--secondary--dark,
+//                hover: $hover--dark,
+//                brand-red: $brand--primary--dark,
+//                brand-blue: $brand--secondary--dark,
+//                border: $border--dark
+//        ),
+//);
+//
+//@mixin themed() {
+//  @each $theme, $map in $themes {
+//    .theme--#{$theme} & {
+//      $theme-map: () !global;
+//      @each $key, $submap in $map {
+//        $value: map-get(map-get($themes, $theme), '#{$key}');
+//        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+//      }
+//      @content;
+//      $theme-map: null !global;
+//    }
+//  }
+//}
+//
+//@function t($key) {
+//  @return map-get($theme-map, $key);
+//}
