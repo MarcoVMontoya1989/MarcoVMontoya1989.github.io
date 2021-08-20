@@ -1,1 +1,0 @@
-React Three Demo with Minecraft touch :)
